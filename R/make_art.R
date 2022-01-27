@@ -90,11 +90,10 @@ make_art <- function(seed = 13, circles = 200, words = 10){
     y <-  runif(1, 0, 10)
     word <- sample(x = word_list, size = 1)
     word_size <- runif(1, 5, 25)
-    font_fam <- sample(x = c("sans", "serif", "mono"), size = )
-    font_face <- sample(x = c("plain", "bold", "italic", "bold.italic"), 1)
+    font_fam <- sample(x = c("sans", "serif", "mono"), size = 1 )
+    font_face <- sample(x = c("plain", "bold", "italic", "bold.italic"), size = 1)
     art <- art + ggplot2::annotate("text", x = x, y = y, label = word, size = word_size, family = font_fam, fontface = font_face)
 
   }
-
   return(art)
 }
