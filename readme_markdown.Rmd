@@ -1,0 +1,14 @@
+---
+title: "Readme"
+author: "Jonas Petter"
+date: "1/28/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Test of readme.
